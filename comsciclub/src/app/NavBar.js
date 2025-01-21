@@ -1,10 +1,12 @@
-const SideBar = () => {
+
+
+const NavBar = () => {
 return(<>
 <section id = 'whitebackground' className="sidebar" >    
 </section>
-<section className="sidebar"> 
+<section className="sidebar" style={{ backgroundColor: '#FEC627', width: '100%', height: '85px' }}>
     <h1 id = "LMCCS" className="sidebar">LMCCS</h1>
-    <img id = "LMCCSID"  className = "sidebar"src="https://i.imgur.com/1Z2Q2Zz.png" alt="LMCCS Logo"/>
+    
     <div className = "links">
         <a  id = "HomeLink" href = "#">Home</a>
         <a  id = "EventsLink" href = "#">Events</a>
@@ -15,3 +17,5 @@ return(<>
 </>);
 
 };
+
+export default NavBar
