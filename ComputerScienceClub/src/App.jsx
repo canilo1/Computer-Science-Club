@@ -2,12 +2,14 @@
 
 import './App.css'
 import Navbar from './Navbar'
+import HomeSection from './HomeSection'
 function App() {
   
 
   return (
     <>
       <Navbar />
+      <HomeSection/>
 
     </>
   )
