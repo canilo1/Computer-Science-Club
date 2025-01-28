@@ -1,7 +1,14 @@
 import ClubImage from './assets/ClubImage.png';
+import DiscordLogo from './assets/DiscordLogo.png';
+import { useState } from 'react';
 
 const HomeSection = () => {
-
+    const[Visibility, setVisibility] = useState(false);
+    const handleClick = () => {
+     
+        console.log("clicked",Visibility);
+        setVisibility(!Visibility);
+    }
     return (
         //The School
         // The club name 
@@ -23,7 +30,7 @@ const HomeSection = () => {
         </div>
     
         <div id="WhoWeAreHolder" className="HomeGrid">
-            <h2 id="WhoWeAre">Who We Are</h2>
+            <button id="WhoWeAre" onClick={handleClick}>Who We Are</button>
         </div>
        <div id = "WelcomingNewMembers">
         <h2 id="NewMembers" className = "WelcomingNewMembersText">New Members Are</h2>
@@ -31,13 +38,19 @@ const HomeSection = () => {
         </div>
         <div id="Discord">
             <h2 id="JoinUs">Join Us</h2>
-            <img
-                src="https://discord.com/assets/3437c10597c1526c3db5e3b6e8c5a1b1.svg"
+            <a   href="https://discord.gg/qU4jJHS8Hy" id="DiscordLink"> <img
+                src={DiscordLogo}
                 alt="Discord Logo"
                 id="DiscordLogo"
-            />
-            <a href="https://discord.gg/5QvY9eM" id="DiscordLink">Join our Discord!</a>
+            /></a>
         </div>
+        {Visibility && <div id="ClubDescription" className="HomeGrid" >
+            <button>
+            We are a computer science club at LOS MEDANOS COLLEGE dedicated to enriching, supporting and helping fellow computer science scholars at our school. With workshops, panel talks, competitions, and office hours, job fairs and so much more!
+            </button>
+      
+        </div>}
+        
     </div>
     
     );

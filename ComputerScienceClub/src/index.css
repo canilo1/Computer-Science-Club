@@ -165,6 +165,13 @@ display: flex
 #WhoWeAre{
   font-size: 3rem;
   font-weight: bolder;
+ background-color: transparent;
+ width: 100%;
+ border: transparent;
+}
+#WhoWeAre:hover{
+  color: yellow;
+  font-size: 3.1rem;
 }
 #WelcomingNewMembers{
   background-color: burlywood;
@@ -210,12 +217,60 @@ display: flex
   font-size: 1.3rem;
     position: relative;
     font-weight: bolder;
-    top: -2rem;
+    top: -3rem;
     font-weight: bolder;
     color: #bb8901;
     text-align: center;
     white-space: nowrap;
 }
 #Discord{
-  background-color: chocolate;
+  display: flex
+  ;
+      justify-content: center;
+      background-color: #FEC627;
+      position: relative;
+      width: 43%;
+      left: 1%;
+      top: -22rem;
+      height: 3rem;
+      align-items: center;
+      color: black;
+      border: 5px solid black;
+      filter: drop-shadow(5px 4px 0px #FEC627);
+}
+#DiscordLogo{
+  position: relative;
+  width: 3em;
+  height: 3em;
+  top: 0.5em;
+  left: 0.5em;
+}
+#ClubDescription{
+  display: flex
+;
+    justify-content: center;
+    background-color: #FEC627;
+    position: relative;
+    width: 43%;
+    left: 52%;
+    top: -24rem;
+    height: 3rem;
+    align-items: center;
+    
+    /* color: black; */
+    /* border: 5px solid black; */
+    /* filter: drop-shadow(5px 4px 0px #FEC627);
+    */
+}
+#ClubDescription button{
+  background-color: #FEC627;
+  /* border: 5px solid black; */
+ 
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  /* padding: 0.5em; */
+  /* margin: 0.5em; */
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
