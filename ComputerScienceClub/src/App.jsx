@@ -3,6 +3,7 @@
 import './App.css'
 import Navbar from './Navbar'
 import HomeSection from './HomeSection'
+import Events from './Events'
 function App() {
   
 
@@ -10,7 +11,7 @@ function App() {
     <>
       <Navbar />
       <HomeSection/>
-
+      <Events/>
     </>
   )
 }
