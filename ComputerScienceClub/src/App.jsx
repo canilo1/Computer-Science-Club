@@ -3,7 +3,7 @@
 import './App.css'
 import Navbar from './Navbar'
 import HomeSection from './HomeSection'
-// import Events from './Events'
+import Events from './Events'
 import Officers from './Officers'
 function App() {
   
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <HomeSection/>
       <Officers/>
-      {/* <Events/> */}
+      <Events/>
     </>
   )
 }
