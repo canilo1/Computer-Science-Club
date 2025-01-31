@@ -1,0 +1,455 @@
+/* Global reset for body and html to ensure full viewport height */
+html, body {
+  height: 100%;       /* Ensure full height of the viewport */
+  margin: 0;          /* Remove default margins */
+  padding: 0;         /* Remove default padding */
+  width: 100%;   
+  background-color: rgb(43, 43, 43)  ;     /* Ensure full width of the viewport */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto;   /* Allow vertical scrolling */
+ /* Hide scrollbars for the entire webpage */
+
+
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none; /* For Webkit browsers (Chrome, Safari) */
+}
+#scrollableContent::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+/* Ensure the root element spans full screen */
+#root {
+  height: 100%;       /* React root div needs to cover the full viewport */
+}
+
+/* Navbar styles */
+#Navbar {
+  width: 98%;        /* Full width of the screen */
+  height: 100px;      /* Set a fixed height for the navbar, if needed */
+  background-color: #FEC627; /* Visualize the navbar */
+  display: flex;      /* Flexbox for layout */
+  justify-content: space-between; /* Space between logo and links */
+  position: fixed;    /* Keep navbar at the top */
+  top: .5em;   
+  left: .6em;
+  border:  .3em black solid;
+  box-shadow: 3px 7px 0px rgb(255, 253, 253);
+  z-index: 20;
+  
+}
+.DirectoryLinks{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5em;
+  align-items: center;
+  width: 50%;
+}
+
+.DirectoryLinks a{
+  text-decoration: none;
+  color: #A41E35;
+  font-size: 2em;
+  transition: transform 1s ease, color .2s ease;
+  font-weight: bold;
+}
+.DirectoryLinks a:hover{
+  color:  rgb(114, 82, 0);
+  transform: scale(1.1)}
+
+  #LMCCSContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin-left: -6em;
+    width: 50%;
+
+  }
+  #LMCCSContainer a{
+    text-decoration: none;
+    color: #000000;
+   font-weight: bolder;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }
+  #HomeSection{
+    display: block;
+    align-items: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.904);
+   top: 13rem;
+   left: 0px;
+   width: 100%;
+   height: 70%;
+    box-shadow: -3px -1px 4px 3px #ff741d;
+    color: white;
+
+  }
+  .ClubPictureSection{
+    position: relative;
+    background-color: rgb(71, 71, 71);
+    display: flex
+;
+    justify-content: center;
+    width: 42em;
+    /* margin-left: -6em; */
+    /* margin-right: 8px; */
+    top: -10em;
+    left: 40em;
+    height: 23em;
+  }
+  #ClubPicture{
+    position: absolute;
+    width: 28em;
+    height: 98%;
+    object-fit: cover;
+    /* z-index: 20; */
+}
+  
+ #School{
+  display: flex
+;
+    position: relative;
+    width: 32%;
+    align-items: center;
+    height: 38%;
+    
+    color: white;
+    top: 1em;
+    left: 8em;
+}
+ 
+ #SchoolName{
+  text-decoration:underline;
+  text-decoration-thickness: 0.1em;
+text-shadow: rgba(0, 0, 0, 0.904);
+  position: absolute;
+    font-size: 54px;
+    text-align: -webkit-center;
+    font-weight: bold;
+  
+  
+ }
+ 
+ 
+#ClubName{
+display: flex
+;
+    justify-content: center;
+    background-color: #FEC627;
+    position: relative;
+    width: 43%;
+    left: 1%;
+    top: -22rem;
+    height: 3rem;
+    align-items: center;
+    color: black;
+    border: 5px solid black;
+    filter: drop-shadow(5px 4px 0px #FEC627);
+}
+#ComputerScienceClub{
+  position: absolute;
+ 
+}
+#WhoWeAreHolder{
+  background-color: burlywood;
+  display: flex
+;
+  justify-content: center;
+  background-color: #FEC627;
+  position: relative;
+  width: 27rem;
+  height: 3rem;
+  left: 2rem;
+  top: -19rem;
+  align-items: center;
+  color: black;
+  border: 5px solid black;
+}
+
+#WhoWeAre{
+  font-size: 3rem;
+  font-weight: bolder;
+ background-color: transparent;
+ width: 100%;
+ border: transparent;
+}
+#WhoWeAre:hover{
+  color: yellow;
+  font-size: 3.1rem;
+}
+#WelcomingNewMembers{
+  background-color: burlywood;
+    display: flex
+;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    position: relative;
+    width: 27rem;
+    height: 3.7rem;
+    left: 2rem;
+    top: -19rem;
+    align-items: center;
+    color: black;
+    border: 5px solid black;
+    flex-direction: column;
+  
+}
+#WelcomingNewMembers {
+  display: flex
+  ;
+      justify-content: center;
+      align-items: center;
+      height: 97px;
+      width: 35%;
+}
+
+#NewMembers, #AlwaysWelcome {
+  font-size: 1.5rem;  /* Default font size */
+  font-weight: bolder;
+  color: #bb8901;
+  text-align: center;
+  white-space: nowrap;  /* Prevent wrapping */
+}
+#NewMembers{
+  color: black;
+    position: relative;
+    font-size: 2rem;
+    top: 0.2em;
+    left: -2em;
+}
+#AlwaysWelcome{
+  font-size: 1.3rem;
+    position: relative;
+    font-weight: bolder;
+    top: -3rem;
+    font-weight: bolder;
+    color: #bb8901;
+    text-align: center;
+    white-space: nowrap;
+}
+#Discord{
+  display: flex
+  ;
+      justify-content: center;
+      background-color: #FEC627;
+      position: relative;
+      width: 43%;
+      left: 1%;
+      top: -22rem;
+      height: 3rem;
+      align-items: center;
+      color: black;
+      border: 5px solid black;
+      filter: drop-shadow(5px 4px 0px #FEC627);
+}
+#DiscordLogo{
+  position: relative;
+  width: 3em;
+  height: 3em;
+  top: 0.5em;
+  left: 0.5em;
+}
+#ClubDescription{
+  display: flex
+;
+    justify-content: center;
+    background-color: #FEC627;
+    position: relative;
+    width: 43%;
+    left: 52%;
+    top: -24rem;
+    height: 3rem;
+    align-items: center;
+    
+    /* color: black; */
+    /* border: 5px solid black; */
+    /* filter: drop-shadow(5px 4px 0px #FEC627);
+    */
+}
+#ClubDescription button{
+  background-color: #FEC627;
+  /* border: 5px solid black; */
+ 
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  /* padding: 0.5em; */
+  /* margin: 0.5em; */
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+#OfficersContainer {
+  display: block;
+ 
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 17em;
+
+
+}
+
+.OfficerTitle h1 {
+ color:  #FEC627;
+  /* border: 5px solid black; */
+  font-size: 4rem;
+  font-weight: bolder;
+  /* padding: 0.5em; */
+}
+
+.Officers {
+  display: grid;
+      grid-template-rows: repeat(1, 31rem);
+      grid-template-columns: repeat(4, 20rem);
+      gap: 1rem;
+      
+
+}
+
+.Officer {
+ background-color: gray;
+ border-radius: 5%;
+    filter: drop-shadow(2px 4px 6px black);
+   filter: blur(1px);
+}
+.Officer:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+  filter: blur(0px);
+}
+
+
+
+
+.Officer h2 {
+  color:  #FEC627; 
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+
+.DescriptionOfOfficer {
+  width: 300px;  /* Adjust based on your layout */
+  height: 200px; /* Adjust height as needed */
+  font-size: clamp(12px, 2vw, 16px); /* Responsive font size */
+  overflow: hidden;
+}
+.FacultyAdvisors h2{
+  color:  #FEC627;
+  /* border: 5px solid black; */
+  font-size: 4rem;
+  font-weight: bolder;
+
+}
+.FacultyAdvisors{
+  display: flex
+  ;
+      justify-content: space-evenly;
+      align-content: stretch;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: nowrap;
+
+}
+#FacultyAdvisor1{
+  background-color:gray;
+  display: grid
+;
+  width: 27%;
+  border-radius: 4%;
+  background-color: gray;
+  border-radius: 5%;
+     filter: drop-shadow(2px 4px 6px black);
+    filter: blur(1px);
+}
+#FacultyAdvisor1:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+  filter: blur(0px);
+}
+
+#EventsContainer{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 17em;
+}
+.EventTitle{
+  color:  #FEC627;
+  /* border: 5px solid black; */
+  font-size: 4rem;
+  font-weight: bolder;
+}
+.UpComingEvents{
+  display: flex;
+  flex-direction: column; /* Ensures children stack vertically */
+ 
+  width: 100%;
+  height: auto;
+}
+
+.UpComingEventsContainer{
+  display: grid
+  ;
+      grid-template-rows: repeat(1, 18rem);
+      grid-template-columns: repeat(4, 13rem);
+      gap: 7rem;
+}
+#UpcomingEventsTitle{
+  color:  #FEC627;
+  width: fit-content;
+  height: fit-content;
+  /* border: 5px solid black; */
+}
+
+.PastEvents h2{
+  color:  #FEC627;
+  width: fit-content;
+  height: fit-content;
+  font-weight: bolder;
+}
+.Upcomingevent{
+  background-color: gray;
+ border-radius: 5%;
+    filter: drop-shadow(2px 4px 6px black);
+   filter: blur(1px);
+}
+.Upcomingevent:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+  filter: blur(0px);
+}
+.PastEvents{
+  display: flex
+  ;
+     
+      top: 2rem;
+      width: 100%;
+      height: auto;
+     position: relative;
+      flex-flow: wrap;
+  
+
+}
+.PastEvent{
+  background-color: gray;
+  border-radius: 5%;
+     filter: drop-shadow(2px 4px 6px black);
+    filter: blur(1px);
+}
+
+.PastEventsContainer{
+  display: grid
+  ;
+      grid-template-rows: repeat(1, 18rem);
+      grid-template-columns: repeat(4, 13rem);
+      gap: 7rem;
+
+}
+.PastEvent:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+  filter: blur(0px);
+}
