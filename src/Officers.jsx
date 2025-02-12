@@ -1,5 +1,6 @@
 const Officers = () => {
     return(
+        <>
         <div id="OfficersContainer"> 
             <section className="OfficerTitle">
                 <h1>Officers</h1>
@@ -41,16 +42,17 @@ const Officers = () => {
                    
                 </section>
             </section>
-            <section className="FacultyAdvisors">
-                <h2>Faculty Advisors</h2>
-                <section className="FacultyAdvisor" id="FacultyAdvisor1">
-                <img alt="Faculty Advisors" />
-                <p>
-                    My Name is xyz I am the faculty advisor for the club, i help the club with any questions they have, and help them with any problems they have.
-                </p>
-                </section>
-            </section>
         </div>
+        <section className="FacultyAdvisors">
+             <h2>Faculty Advisors</h2>
+             <section className="FacultyAdvisor" id="FacultyAdvisor1">
+             <img alt="Faculty Advisors" />
+             <p>
+                 My Name is xyz I am the faculty advisor for the club, i help the club with any questions they have, and help them with any problems they have.
+             </p>
+             </section>
+             </section>
+        </>
     );
 }
 
