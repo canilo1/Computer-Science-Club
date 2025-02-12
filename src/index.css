@@ -4,7 +4,11 @@ html, body {
   margin: 0;          /* Remove default margins */
   padding: 0;         /* Remove default padding */
   width: 100%;   
-  background-color: rgb(43, 43, 43)  ;     /* Ensure full width of the viewport */
+  
+    background-image: radial-gradient(#E50000 2px, transparent 2px);
+    background-size: 27px 27px;
+    background-color: #2B2B2B;
+      /* Ensure full width of the viewport */
   overflow-x: hidden; /* Prevent horizontal scrolling */
   overflow-y: auto;   /* Allow vertical scrolling */
  /* Hide scrollbars for the entire webpage */
@@ -76,7 +80,8 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
     display: block;
     align-items: center;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.904);
+background: #800000;
+background: linear-gradient(0deg, #800000, #FF1010);
    top: 13rem;
    left: 0px;
    width: 100%;
@@ -87,6 +92,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   }
   .ClubPictureSection{
     position: relative;
+    border-radius: 100px 100px 5px / 100px 100px 5px;
     background-color: rgb(71, 71, 71);
     display: flex
 ;
@@ -100,9 +106,11 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   }
   #ClubPicture{
     position: absolute;
-    width: 28em;
-    height: 98%;
+    width: 25em;
+    height: 94%;
+    padding: 6px;
     object-fit: cover;
+    /* z-index: 20;
     /* z-index: 20; */
 }
   
@@ -308,7 +316,7 @@ display: flex
 }
 
 .Officer {
- background-color: gray;
+ background-color: #556973;
  border-radius: 5%;
     filter: drop-shadow(2px 4px 6px black);
    filter: blur(1px);
@@ -317,6 +325,8 @@ display: flex
   transform: scale(1.1);
   transition: transform 0.5s ease;
   filter: blur(0px);
+  background: #556973;
+  background: linear-gradient(to bottom right, #556973 0%, #BCE9FF 100%);
 }
 
 
@@ -353,12 +363,12 @@ display: flex
 
 }
 #FacultyAdvisor1{
-  background-color:gray;
+  background-color:#556973 ;
   display: grid
 ;
   width: 27%;
   border-radius: 4%;
-  background-color: gray;
+
   border-radius: 5%;
      filter: drop-shadow(2px 4px 6px black);
     filter: blur(1px);
@@ -367,6 +377,8 @@ display: flex
   transform: scale(1.1);
   transition: transform 0.5s ease;
   filter: blur(0px);
+  background: #556973;
+  background: linear-gradient(to bottom right, #556973 0%, #BCE9FF 100%);
 }
 
 #EventsContainer{
@@ -411,7 +423,7 @@ display: flex
   font-weight: bolder;
 }
 .Upcomingevent{
-  background-color: gray;
+  background-color: #556973;
  border-radius: 5%;
     filter: drop-shadow(2px 4px 6px black);
    filter: blur(1px);
@@ -420,6 +432,9 @@ display: flex
   transform: scale(1.1);
   transition: transform 0.5s ease;
   filter: blur(0px);
+  background: #556973;
+background: linear-gradient(to bottom right, #556973 0%, #BCE9FF 100%);
+
 }
 .PastEvents{
   display: flex
@@ -434,7 +449,7 @@ display: flex
 
 }
 .PastEvent{
-  background-color: gray;
+  background-color: #556973;
   border-radius: 5%;
      filter: drop-shadow(2px 4px 6px black);
     filter: blur(1px);
@@ -452,4 +467,6 @@ display: flex
   transform: scale(1.1);
   transition: transform 0.5s ease;
   filter: blur(0px);
+  background: #556973;
+  background: linear-gradient(to bottom right, #556973 0%, #BCE9FF 100%);
 }
